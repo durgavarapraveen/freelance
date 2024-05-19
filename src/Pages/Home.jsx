@@ -1,8 +1,22 @@
-import React, { useState } from "react";
-import Forms from "../components/Form";
+import React from "react";
+import Section1 from "./Section1";
+import Section2 from "./Section2";
+import OurHappyCustomers from "./OurHappyCustomers";
+import Services from "./Section3";
+import Forms from "../Components/form";
+import Footer from "../Components/Footer";
 
 function Home() {
-  return <Forms></Forms>;
+  return (
+    <div className="w-full h-screen overflow-y-scroll">
+      <Section1 />
+      <Section2 />
+      <Services />
+      <OurHappyCustomers />
+      <Forms />
+      <Footer />
+    </div>
+  );
 }
 
 export default Home;

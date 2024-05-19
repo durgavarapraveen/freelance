@@ -11,9 +11,16 @@
   },
   "dependencies": {
     "animate.css": "^4.1.1",
+    "flowbite-react": "^0.9.0",
+    "framer-motion": "^11.2.4",
+    "primereact": "^10.6.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.23.1"
+    "react-hot-toast": "^2.4.1",
+    "react-intersection-observer": "^9.10.2",
+    "react-responsive-carousel": "^3.2.23",
+    "react-router-dom": "^6.23.1",
+    "react-youtube": "^10.1.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
