@@ -37,7 +37,7 @@ function Forms() {
   return (
     <div
       id="contact"
-      className="flex relative items-center justify-center min-h-screen bg-orange-500 p-6"
+      className="flex relative items-center justify-center py-40 bg-orange-500 p-6"
     >
       <div className="flex flex-col md:flex-row bg-white rounded-lg max-w-4xl w-full">
         <div className="p-8 md:w-1/2 bg-orange-500 text-white flex flex-col justify-center">

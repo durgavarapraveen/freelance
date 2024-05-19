@@ -1,4 +1,6 @@
+
 import React, { useEffect, useRef, useState } from "react";
+import Footer from "./Footer";
 
 const RevealOnScroll = ({ children }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -60,53 +62,48 @@ export default function Services() {
   ];
 
   return (
-    <div className="mt-[7rem] relative p-0">
-      <div className="md:h-[80vh] flex md:flex-row flex-col">
-        <div className="bg-[#FF5829] md:w-[50%] w-full flex justify-center items-center md:p-0 sm:p-16 p-10">
-          <RevealOnScroll>
-            <p className="text-white font-bold sm:text-8xl text-5xl">
-              Our <br className="md:block hidden" /> Services
-            </p>
-          </RevealOnScroll>
-        </div>
-        <div className="md:w-[50%] w-full flex justify-center items-center bg-gray-100 md:p-0 sm:p-16 p-12">
-          <div className="flex flex-col gap-5 md:px-[20%]">
+    <div className='p-0'>
+      <div className='md:h-[80vh] flex md:flex-row flex-col'>
+          <div className='bg-orange-500 md:w-[50%] w-full flex justify-center items-center md:p-0 sm:p-16 p-10'>
+             <RevealOnScroll>
+            <p className='text-white font-bold sm:text-8xl text-5xl'>Our <br className='md:block hidden'/> Services</p>
+             </RevealOnScroll>
+          </div>
+          <div className='md:w-[50%] w-full flex justify-center items-center bg-gray-100 md:p-0 sm:p-16 p-12'>
+            <div className='flex flex-col gap-5 md:px-[20%]'>
             <RevealOnScroll>
               <p className="text-gray-950 font-medium text-base ">
                 I'm a paragraph. Click here to add your own text and edit me.
-                It’s easy. Just click “Edit Text” or double click me to add your
-                own content and make changes to the font.
-              </p>
-            </RevealOnScroll>
-            <RevealOnScroll>
-              <button className="bg-[#FF5829] text-gray-70 font-medium duration-500 hover:bg-black hover:text-white py-3 px-6 w-fit">
-                Get A Free Estimate
-              </button>
-            </RevealOnScroll>
-          </div>
-        </div>
-      </div>
-      <div className="grid md:grid-cols-2 grid-cols-1 gap-5 md:p-20 sm:p-12 p-6 bg-gray-100">
-        {data.map((item, index) => (
-          <div key={index} className="flex flex-col shadow-lg ">
-            <div className="bg-gray-200">
-              <img
-                src={item.image}
-                alt={item.label}
-                className="w-full hover:scale-95 hover:opacity-90 duration-1000 cursor-pointer"
-              />
-            </div>
-            <div className="w-full sm:py-16 py-8 px-8 flex flex-col gap-5">
-              <RevealOnScroll>
-                <p className="text-3xl font-semibold">{item.label}</p>
-              </RevealOnScroll>
-              <RevealOnScroll>
-                <p>{item.text}</p>
-              </RevealOnScroll>
+                It’s easy. Just click “Edit Text” or double click me to add 
+                your own content and make changes to the font.</p>
+             </RevealOnScroll>
+             <RevealOnScroll>
+               <button className='bg-orange-500 text-gray-70 font-medium duration-500 hover:bg-black hover:text-white py-3 px-6 w-fit'>Get A Free Estimate</button>
+             </RevealOnScroll>
+            
             </div>
           </div>
-        ))}
       </div>
+      <div className='grid md:grid-cols-2 grid-cols-1 gap-5 md:p-20 sm:p-12 p-6 bg-gray-100'>
+          {
+            data.map((item,index)=>(
+                <div key={index} className='flex flex-col shadow-lg '>
+                    <div className='bg-gray-200'>
+                   <img src={item.image} alt={item.label} className='w-full hover:scale-95 hover:opacity-90 duration-1000 cursor-pointer' />
+                    </div>
+                   <div className='w-full sm:py-16 py-8 px-8 flex flex-col gap-5 bg-black sm:bg-white'>
+                        <RevealOnScroll >
+                       <p className='text-3xl font-semibold sm:text-black text-white'>{item.label}</p>
+                        </RevealOnScroll>
+                        <RevealOnScroll >
+                            <p className='sm:text-black text-white' >{item.text}</p>
+                        </RevealOnScroll>
+                   </div>
+                </div>
+            ))
+          }
+      </div>
+      <Footer />
     </div>
   );
 }

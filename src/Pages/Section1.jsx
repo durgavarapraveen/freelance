@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 function Section1() {
   return (
-    <div className="relative w-full h-screen mt-[7rem]">
+    <div className="relative w-full h-screen ">
       <video
         autoPlay
         loop

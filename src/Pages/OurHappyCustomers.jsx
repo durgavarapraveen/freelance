@@ -59,7 +59,7 @@ function OurHappyCustomers() {
 
   return (
     <div
-      className="relative bg-white w-full z-10 flex flex-col justify-center items-center py-10"
+      className="relative bg-white w-full z-10 flex flex-col justify-center items-center py-12"
       style={{ backgroundColor: "white" }}
       ref={ref}
     >

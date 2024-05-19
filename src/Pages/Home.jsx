@@ -3,7 +3,8 @@ import Section1 from "./Section1";
 import Section2 from "./Section2";
 import OurHappyCustomers from "./OurHappyCustomers";
 import Services from "./Section3";
-import Forms from "../Components/form";
+import Forms from "../components/form";
+import Footer from "../components/Footer";
 
 function Home() {
   return (

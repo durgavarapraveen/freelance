@@ -1,5 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Forms from "./form";
+import Footer from "./Footer";
+
 
 const RevealOnScroll = ({ children }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -52,9 +54,9 @@ export default function Tips() {
     },
   ];
   return (
-    <div className="p-0 mt-[7rem]">
-      <div className="md:h-[80vh] flex md:flex-row flex-col">
-        <div className="bg-[#FF5829] md:w-[50%] w-full flex justify-center items-center md:p-0 sm:p-16 p-10">
+    <div className='p-0'>
+      <div className='md:h-[80vh] flex md:flex-row flex-col'>
+          <div className='bg-orange-500 md:w-[50%] w-full flex justify-center items-center md:p-0 sm:p-16 p-10'>
           <RevealOnScroll>
             <p className="text-white font-bold sm:text-8xl text-5xl">
               Moving <br className="md:block hidden" /> Tips
@@ -73,22 +75,22 @@ export default function Tips() {
           </div>
         </div>
       </div>
-      <div className="grid md:grid-cols-2 grid-cols-1 gap-5 md:p-20 sm:p-12 p-6 bg-gray-100">
-        {data.map((item, index) => (
-          <div
-            key={index}
-            className={`px-12 py-20 flex justify-center items-center flex-col gap-5 ${
-              index % 3 !== 0 ? "bg-[#FF5829]" : "bg-black text-white"
-            }`}
-          >
-            <p className="font-medium text-lg">{item.label}</p>
-            <RevealOnScroll>
-              <p>{item.text}</p>
-            </RevealOnScroll>
-          </div>
-        ))}
+      <div className='grid md:grid-cols-2 grid-cols-1 gap-5 md:p-20 sm:p-12 p-6 bg-gray-100'>
+          {
+            data.map((item,index)=>(
+                <div key={index} className={`px-12 py-20 flex justify-center items-center flex-col gap-5 ${
+                    index % 3 !== 0 ? 'bg-orange-500' : 'bg-black text-white'
+                  }`} >
+                    <p className='font-medium text-lg'>{item.label}</p>
+                    <RevealOnScroll><p>{item.text}</p></RevealOnScroll>
+                    
+                </div>
+            ))
+          }
       </div>
       <Forms />
+      
+      <Footer />
     </div>
   );
 }
