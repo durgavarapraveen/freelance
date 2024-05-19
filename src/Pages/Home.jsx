@@ -14,7 +14,6 @@ function Home() {
       <Services />
       <OurHappyCustomers />
       <Forms />
-      <Footer />
     </div>
   );
 }
