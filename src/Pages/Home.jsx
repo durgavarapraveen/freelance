@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+import Section1 from "./Section1";
+import Section2 from "./Section2";
+import OurHappyCustomers from "./OurHappyCustomers";
 
 function Home() {
   return (
-    <div>Home</div>
-  )
+    <div className="w-full h-screen overflow-y-scroll">
+      <Section1 />
+      <Section2 />
+      <OurHappyCustomers />
+    </div>
+  );
 }
 
-export default Home
+export default Home;
