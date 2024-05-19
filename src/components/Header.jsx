@@ -1,10 +1,11 @@
 import React, { useRef, useState } from 'react';
 import image from '../assets/Image.jpg'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { LuMenu } from "react-icons/lu";
 import { IoMdCloseCircleOutline } from "react-icons/io";
 
 function Header() {
+//   const {section}=useParams()
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [selectedMenu, setSelectedMenu] = useState('Home');
   const navigate = useNavigate();
@@ -20,7 +21,8 @@ function Header() {
     setIsDropdownOpen(false);
     navigate(path);
   };
-  
+
+
   return (
     <div className="flex flex-col gap-10">
       <div className="flex flex-col">
@@ -82,13 +84,13 @@ function Header() {
                 >
                   Home
                 </a>
-                <a
+                {/* <a
                   href="#"
                   className={`${selectedMenu === 'About' ? 'text-orange-500' : 'text-white'} hover:text-orange-600`}
                   onClick={() => handleMenuClick('About', '#')}
                 >
                   About
-                </a>
+                </a> */}
                 <a
                   href="#"
                   className={`${selectedMenu === 'Services' ? 'text-orange-500' : 'text-white'} hover:text-orange-600`}
@@ -103,13 +105,13 @@ function Header() {
                 >
                   Tips
                 </a>
-                <a
+                {/* <a
                   href="#"
                   className={`${selectedMenu === 'Contact' ? 'text-orange-500' : 'text-white'} hover:text-orange-600`}
                   onClick={() => handleMenuClick('Contact', '#')}
                 >
                   Contact
-                </a>
+                </a> */}
         </div>
         <div className='w-1/5 h-full lg:block hidden'>
             <button className="bg-orange-600 w-full h-full py-10 text-black duration-500 hover:bg-black hover:text-white font-bold">Free Quote</button>
