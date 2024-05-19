@@ -25,11 +25,9 @@ function Footer() {
         <div className="left flex flex-row flex-wrap">
           <img src={image} alt="logo" className="w-20 h-20" />
           <h1 className="whitespace-pre-line text-white font-bold">
-            Fly
+           Blue
             <br />
-            Right
-            <br />
-            Movers
+            Torq
           </h1>
         </div>
         <div>
