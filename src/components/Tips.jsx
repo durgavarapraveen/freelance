@@ -55,7 +55,7 @@ export default function Tips() {
   return (
     <div className='p-0'>
       <div className='md:h-[80vh] flex md:flex-row flex-col'>
-          <div className='bg-[#FF5829] md:w-[50%] w-full flex justify-center items-center md:p-0 sm:p-16 p-10'>
+          <div className='bg-orange-500 md:w-[50%] w-full flex justify-center items-center md:p-0 sm:p-16 p-10'>
           <RevealOnScroll>
             <p className='text-white font-bold sm:text-8xl text-5xl'>Moving <br className='md:block hidden'/> Tips</p>
             </RevealOnScroll>
@@ -75,7 +75,7 @@ export default function Tips() {
           {
             data.map((item,index)=>(
                 <div key={index} className={`px-12 py-20 flex justify-center items-center flex-col gap-5 ${
-                    index % 3 !== 0 ? 'bg-[#FF5829]' : 'bg-black text-white'
+                    index % 3 !== 0 ? 'bg-orange-500' : 'bg-black text-white'
                   }`} >
                     <p className='font-medium text-lg'>{item.label}</p>
                     <RevealOnScroll><p>{item.text}</p></RevealOnScroll>
