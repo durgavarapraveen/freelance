@@ -1,9 +1,8 @@
-import React from 'react'
+import React, { useState } from "react";
+import Forms from "../components/form";
 
 function Home() {
-  return (
-    <div>Home</div>
-  )
+  return <Forms></Forms>;
 }
 
-export default Home
+export default Home;
