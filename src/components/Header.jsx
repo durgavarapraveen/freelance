@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import image from '../assets/image.jpg'
+import image from '../assets/Image.jpg'
 import { useNavigate } from 'react-router-dom';
 import { LuMenu } from "react-icons/lu";
 import { IoMdCloseCircleOutline } from "react-icons/io";
@@ -46,7 +46,7 @@ function Header() {
                 <a
                   href="#"
                   className={`${selectedMenu === 'About' ? 'text-orange-500' : 'text-white'} hover:text-orange-600`}
-                  onClick={() => handleMenuClick('About', '/about')}
+                  onClick={() => handleMenuClick('About', '#')}
                 >
                   About
                 </a>
@@ -67,7 +67,7 @@ function Header() {
                 <a
                   href="#"
                   className={`${selectedMenu === 'Contact' ? 'text-orange-500' : 'text-white'} hover:text-orange-600`}
-                  onClick={() => handleMenuClick('Contact', '/contact')}
+                  onClick={() => handleMenuClick('Contact', '#')}
                 >
                   Contact
                 </a>
@@ -85,7 +85,7 @@ function Header() {
                 <a
                   href="#"
                   className={`${selectedMenu === 'About' ? 'text-orange-500' : 'text-white'} hover:text-orange-600`}
-                  onClick={() => handleMenuClick('About', '/about')}
+                  onClick={() => handleMenuClick('About', '#')}
                 >
                   About
                 </a>
@@ -106,7 +106,7 @@ function Header() {
                 <a
                   href="#"
                   className={`${selectedMenu === 'Contact' ? 'text-orange-500' : 'text-white'} hover:text-orange-600`}
-                  onClick={() => handleMenuClick('Contact', '/contact')}
+                  onClick={() => handleMenuClick('Contact', '#')}
                 >
                   Contact
                 </a>
@@ -114,11 +114,11 @@ function Header() {
         <div className='w-1/5 h-full lg:block hidden'>
             <button className="bg-orange-600 w-full h-full py-10 text-black duration-500 hover:bg-black hover:text-white font-bold">Free Quote</button>
         </div>
+        
       </div>
     </div>
     
     </div>
-    
   );
 }
 

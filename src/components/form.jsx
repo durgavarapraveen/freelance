@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
 
 function Forms() {
   const [formData, setFormData] = useState({
@@ -21,10 +22,23 @@ function Forms() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
+    toast.success("Form Submitted Successfully");
+    setFormData({
+      movingFrom: "",
+      movingTo: "",
+      movingDate: "",
+      rooms: "",
+      firstName: "",
+      lastName: "",
+      phone: "",
+    });
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-orange-500 p-6">
+    <div
+      id="contact"
+      className="flex relative items-center justify-center py-40 bg-orange-500 p-6"
+    >
       <div className="flex flex-col md:flex-row bg-white rounded-lg max-w-4xl w-full">
         <div className="p-8 md:w-1/2 bg-orange-500 text-white flex flex-col justify-center">
           <h1 className="text-6xl font-bold mb-4">Get Your Free Quote</h1>
@@ -126,6 +140,7 @@ function Forms() {
           </form>
         </div>
       </div>
+      <Toaster />
     </div>
   );
 }
