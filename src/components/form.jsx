@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 
+import service from '../assets/service.png'
 function Forms() {
   const [formData, setFormData] = useState({
     movingFrom: "",
@@ -39,15 +40,16 @@ function Forms() {
       id="contact"
       className="flex relative items-center justify-center py-40 bg-orange-500 p-6"
     >
-      <div className="flex flex-col md:flex-row bg-white rounded-lg max-w-4xl w-full">
+      <div className="flex flex-col md:flex-row rounded-lg max-w-4xl w-full items-center gap-12">
         <div className="p-8 md:w-1/2 bg-orange-500 text-white flex flex-col justify-center">
           <h1 className="text-6xl font-bold mb-4">Get Your Free Quote</h1>
           <p className="text-lg">
             I'm a paragraph. Click here to add your own text and edit me. It's
             easy.
           </p>
+          <img src={service} className="mt-7" />
         </div>
-        <div className="p-8 md:w-1/2">
+        <div className="p-8 md:w-1/2 bg-white h-fit">
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="flex space-x-4">
               <input

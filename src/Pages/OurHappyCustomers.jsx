@@ -67,7 +67,7 @@ function OurHappyCustomers() {
         initial={{ opacity: 0, y: 100 }}
         animate={controls}
         transition={{ duration: 1 }}
-        className="text-black text-5xl font-bold py-5"
+        className="text-black text-5xl font-bold py-5 text-center"
       >
         Our Happy Customers
       </motion.h1>
