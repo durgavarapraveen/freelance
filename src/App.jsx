@@ -1,15 +1,20 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
+import Services from "./Components/Services";
+import Tips from "./Components/Tips";
+import Header from "./Components/Header";
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
+      <Header />
       <Routes>
+        <Route path="/services" element={<Services />} />
+        <Route path="/tips" element={<Tips />} />
         <Route path="/" element={<Home />} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
-
 export default App;

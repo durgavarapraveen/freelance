@@ -18,10 +18,10 @@ function Section2() {
   }, [controls, inView]);
 
   return (
-    <div className="w-full h-screen flex row z-50 relative">
+    <div className="w-full md:h-screen flex md:flex-row flex-col z-10 relative">
       <div
         ref={ref}
-        className="bg-primary w-full flex align-center justify-center flex-col px-32"
+        className="bg-orange-500 md:w-1/2 w-full flex align-center justify-center flex-col lg:px-32 sm:px-20 py-20"
       >
         <motion.div
           initial={{ opacity: 0, y: 100 }}
@@ -59,7 +59,7 @@ function Section2() {
           </button>
         </motion.div>
       </div>
-      <motion.div className="w-full h-screen">
+      <motion.div className="md:w-1/2 w-full md:h-screen md:block hidden">
         <img
           className="h-screen w-full object-cover"
           src="https://static.wixstatic.com/media/ea26fd_fd2d14bc58af4e109522dd08a798820d~mv2_d_6720_4480_s_4_2.jpeg/v1/fill/w_490,h_640,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/ea26fd_fd2d14bc58af4e109522dd08a798820d~mv2_d_6720_4480_s_4_2.jpeg"
