@@ -4,7 +4,6 @@ import Section2 from "./Section2";
 import OurHappyCustomers from "./OurHappyCustomers";
 import Services from "./Section3";
 import Forms from "../Components/form";
-import Footer from "../Components/Footer";
 
 function Home() {
   return (
@@ -14,7 +13,6 @@ function Home() {
       <Services />
       <OurHappyCustomers />
       <Forms />
-      <Footer />
     </div>
   );
 }
