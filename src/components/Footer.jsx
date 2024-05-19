@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../assets/Image.jpg";
+import image from "../assets/image.jpg";
 import {
   FaFacebook,
   FaGithub,
