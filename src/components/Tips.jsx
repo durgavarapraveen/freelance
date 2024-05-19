@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
+import Forms from './Form';
 
 
 const RevealOnScroll = ({ children }) => {
@@ -83,6 +84,7 @@ export default function Tips() {
             ))
           }
       </div>
+      <Forms />
     </div>
   )
 }

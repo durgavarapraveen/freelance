@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Forms from "../components/form";
+import Forms from "../components/Form";
 
 function Home() {
   return <Forms></Forms>;
